@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
             TextFormField(
               validator: (String? texto) {
                 if((texto == null) || (texto.isEmpty)){
-                  return "Preencha este campo, ola lucas";
+                  return "Preencha este campo";
                 }
                 return null;
               },
@@ -75,9 +75,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.circular(5),
                   
                 ),
-                labelText: "ola lucas Email: ",
+                labelText: "Email: ",
                 labelStyle: TextStyle(fontSize: 25, color: Colors.grey),
-                hintText: "olalucasExemplo@gmail.com",
+                hintText: "Exemplo@gmail.com",
                 hintStyle: TextStyle(fontSize: 15, color: Colors.grey),
               ),
             ),
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
               obscureText: true,
               validator: (String? texto) {
                 if((texto == null) || (texto.isEmpty)){
-                  return "ola lucas Preencha este campo";
+                  return "Preencha este campo";
                 }
                 return null;
               },
@@ -94,9 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(5),
                 ),
-                labelText: "ola lucas Sua senha: ",
+                labelText: "Sua senha: ",
                 labelStyle: TextStyle(fontSize: 25, color: Colors.grey),
-                hintText: "ola lucas Password",
+                hintText: "Password",
                 hintStyle: TextStyle(fontSize: 15, color: Colors.grey),
               ),
             ),
@@ -104,10 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: (){
                 if(formkey.currentState!.validate()){
-                  debugPrint("ola lucas Login realizado com sucesso");
+                  debugPrint("Login realizado com sucesso");
                 }
               },
-              child: const Text("ola lucas Fazer login"),
+              child: const Text("Fazer login"),
             )
           ],
         ),
